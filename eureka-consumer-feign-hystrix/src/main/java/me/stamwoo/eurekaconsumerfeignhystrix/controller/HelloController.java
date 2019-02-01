@@ -1,5 +1,6 @@
 package me.stamwoo.eurekaconsumerfeignhystrix.controller;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import me.stamwoo.eurekaconsumerfeignhystrix.HelloRemote;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
