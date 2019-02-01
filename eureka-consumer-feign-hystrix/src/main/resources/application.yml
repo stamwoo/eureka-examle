@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: eureka-producer-feign-hystrix
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7000/eureka/
+server:
+  port: 8003
+feign:
+  hystrix:
+    enabled: true
+
+#用来暴露 endpoints
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
