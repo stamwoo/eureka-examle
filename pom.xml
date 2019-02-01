@@ -24,6 +24,7 @@
 		<module>eureka-producer-feign</module>
 		<module>eureka-server</module>
 		<module>hystrix-dashboard</module>
+		<module>turbine</module>
 	</modules>
 
 </project>
