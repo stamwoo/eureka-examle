@@ -18,6 +18,10 @@ out/
 *.iml
 *.iws
 
+# maven ignore
+.mvn/
+mvn*
+
 # temp ignore
 *.log
 *.cache
