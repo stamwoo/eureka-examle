@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: turbine
+server:
+  port: 8080
+management:
+  port: 8081
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    service-url:
+      defaultZone: http://localhost:7000/eureka/
+
+turbine:
+  app-config: eureka-consumer-feign-hystrix
+  cluster-name-expression: new String("default")
+  combine-host-port: true
