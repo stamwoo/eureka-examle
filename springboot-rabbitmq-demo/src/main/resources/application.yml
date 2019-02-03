@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    active: usage_message
+  rabbitmq:
+    port: 5672
+tutorial:
+  client:
+    duration: 10000
