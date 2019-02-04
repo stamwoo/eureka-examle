@@ -9,6 +9,7 @@ import reactor.core.publisher.Mono;
 /**
  * @author woo
  */
+// 开启更新机制
 @RefreshScope
 @RestController
 public class HelloController {
