@@ -10,7 +10,7 @@ import reactor.core.publisher.Mono;
  * @author woo
  */
 // 开启更新机制
-@RefreshScope
+@RefreshScope //必须加，否则客户端会受到服务端的更新消息，但是更新不了，因为不知道更新哪里的
 @RestController
 public class HelloController {
 
