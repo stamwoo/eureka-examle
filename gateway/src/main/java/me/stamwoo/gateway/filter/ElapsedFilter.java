@@ -5,12 +5,14 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.cloud.gateway.filter.GatewayFilter;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.core.Ordered;
+import org.springframework.stereotype.Component;
 import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
 
 /**
  * @author woo
  */
+@Component
 public class ElapsedFilter implements GatewayFilter, Ordered {
     private static final Log log = LogFactory.getLog(ElapsedFilter.class);
     private static final String ELAPSED_TIME_BEGIN = "elapsedTimeBegin";
