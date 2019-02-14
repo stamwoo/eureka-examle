@@ -41,13 +41,13 @@ public class GatewayApplication {
                         .order(0)
                         .id("customer_service")
                 )*/
-                .route(r -> r.path("/customer/**")
+/*                .route(r -> r.path("/customer/**")
                         .filters(f -> f.stripPrefix(1)
                                 .filter(rateLimitByCpuGatewayFilter))
                         .uri("lb://EUREKA-CONSUMER")
                         .order(0)
                         .id("customer_service")
-                )
+                )*/
                 .build();
         // @formatter:on
     }
