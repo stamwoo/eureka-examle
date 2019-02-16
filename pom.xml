@@ -36,6 +36,8 @@
 		<module>trace-a</module>
 		<module>trace-b</module>
         <module>gateway</module>
+		<module>admin-server</module>
+		<module>sba-client</module>
 	</modules>
 
 	<dependencyManagement>
